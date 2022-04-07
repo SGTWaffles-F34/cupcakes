@@ -11,7 +11,7 @@
 <h1>Cupcake Fundraiser</h1>
 
 <form id="cupcake-form" action="#" method="post">
-    <label>Your Name:</label>
+    <p>Your Name:</p>
 <input type="text" id="name" placeholder="Enter your name!" name="name">
 </form>
 </body>
