@@ -15,9 +15,8 @@
 <input type="text" id="name" placeholder="Enter your name!" name="name">
     <br>
     <p>Cupcake Flavors</p>
-    <br>
 
-    <ul>
+    <ul style="list-style-type: none">
         <li><input type="checkbox" name="flavor[]"> Chocolate</li>
         <li><input type="checkbox" name="flavor[]"> Vanilla</li>
         <li><input type="checkbox" name="flavor[]"> Tiramisu</li>
