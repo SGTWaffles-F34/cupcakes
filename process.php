@@ -17,7 +17,7 @@ if(empty($_GET['name'])){
     $isValid = false;
 }
 
-$name = $_GET['name'];
+$name = $_POST['name'];
 
 
 $flavor = implode("<li>", $_GET['flavor']);
