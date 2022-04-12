@@ -13,7 +13,6 @@ $isValid = true;
 
 //check if a name was given
 if(empty($_GET['name'])){
-    echo "name was invalid";
     $isValid = false;
 }
 
@@ -35,12 +34,6 @@ if($isValid == false){
     echo "Sorry you didn't provide a name for your order! try again please!";
 }
 else {
-
-    thanks($name);
-    echo '<h3>Order Summary:</h3>';
-    echo "<p><li>$flavor</li></p>";
-    echo "<p>Order Total: $price</p>";
-
     function thanks($name = "")
     {
         $msg = "<h1> Thank you, $name, for your order!";
@@ -51,8 +44,12 @@ else {
         $msg .= "!</h1>";*/
         echo $msg;
     }
+
+    thanks($name);
+    echo '<h3>Order Summary:</h3>';
+    echo "<p><li>$flavor</li></p>";
+    echo "<p>Order Total: $price</p>";
+
+
 }
-
-echo" the end";
-
 ?>
