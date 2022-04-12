@@ -29,6 +29,7 @@ if($isValid == false){
     echo "Sorry you didn't provide a name for your order! try again please!";
 }
 else {
+    echo"WEEEE WOOOO";
 
     $numCupcakes = sizeof($_GET['flavor']);
 
@@ -54,6 +55,8 @@ else {
         $msg .= "!</h1>";*/
         echo $msg;
     }
-
 }
+
+echo" the end";
+
 ?>
