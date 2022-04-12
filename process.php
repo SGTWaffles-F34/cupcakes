@@ -15,30 +15,28 @@ $isValid = true;
 if(empty($_GET['name'])){
     echo "name was invalid";
     $isValid = false;
-}else{
-    echo "Getting Name...";
-    $name = $_GET['name'];
 }
+
+$name = $_GET['name'];
+
 
 $flavor = implode("<li>", $_GET['flavor']);
 
 define("Cupcake_Cost", 3.50);
+
+$numCupcakes = sizeof($_GET['flavor']);
+$price = 0.0;
+$price += $numCupcakes * Cupcake_Cost;
+//$price += $flavor * Cupcake_Cost;
+
+$price = number_format($price, 2);
+
 
 echo "is valid?";
 if($isValid == false){
     echo "Sorry you didn't provide a name for your order! try again please!";
 }
 else {
-    echo"WEEEE WOOOO";
-
-    $numCupcakes = sizeof($_GET['flavor']);
-
-    $price = 0.0;
-    $price += $numCupcakes * Cupcake_Cost;
-//$price += $flavor * Cupcake_Cost;
-
-    $price = number_format($price, 2);
-
 
     thanks($name);
     echo '<h3>Order Summary:</h3>';
