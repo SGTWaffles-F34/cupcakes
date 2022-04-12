@@ -16,6 +16,7 @@ if(empty($_GET['name'])){
     echo "name was invalid";
     $isValid = false;
 }else{
+    echo "Getting Name...";
     $name = $_GET['name'];
 }
 
