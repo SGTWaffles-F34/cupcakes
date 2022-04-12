@@ -13,6 +13,7 @@ $isValid = true;
 
 //check if a name was given
 if(empty($_GET['name'])){
+    echo "name was invalid";
     $isValid = false;
 }else{
     $name = $_GET['name'];
