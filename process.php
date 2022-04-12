@@ -24,6 +24,7 @@ $flavor = implode("<li>", $_GET['flavor']);
 
 define("Cupcake_Cost", 3.50);
 
+echo "is valid?";
 if($isValid == false){
     echo "Sorry you didn't provide a name for your order! try again please!";
 }
