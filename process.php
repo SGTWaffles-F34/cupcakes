@@ -21,7 +21,7 @@ if($name.is_null()){
 
 define("Cupcake_Cost", 3.50);
 
-if(!$isValid){
+if($isValid == false){
     echo "Sorry you didn't provide a name for your order! try again please!";
 }
 else {
