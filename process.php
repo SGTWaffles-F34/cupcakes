@@ -31,8 +31,6 @@ $price += $numCupcakes * Cupcake_Cost;
 
 $price = number_format($price, 2);
 
-
-echo "is valid?";
 if($isValid == false){
     echo "Sorry you didn't provide a name for your order! try again please!";
 }
