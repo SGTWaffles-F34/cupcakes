@@ -11,13 +11,14 @@ Description: cupcake confirmation
 
 $isValid = true;
 
-$name = $_GET['name'];
-$flavor = implode("<li>", $_GET['flavor']);
-
 //check if a name was given
-if($name.is_null()){
+if(empty($_GET['name'])){
     $isValid = false;
+}else{
+    $name = $_GET['name'];
 }
+
+$flavor = implode("<li>", $_GET['flavor']);
 
 define("Cupcake_Cost", 3.50);
 
